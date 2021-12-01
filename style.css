@@ -31,13 +31,16 @@ header .logo
 }
 
 .shopping {
-  /* position: relative; */
+  position: absolute;
+  top: 2;
+  right: 1100px;
+  align-items: center;
   width: 200px;
-  height: 100px;
-  background: url(s.jpg);
+  height: 130px;
+  background: url(s.png);
   background-repeat: no-repeat;
   background-size: 30px;
-  display: inline-flex;
+  display: flex;
   
   
 }
