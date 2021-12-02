@@ -41,8 +41,19 @@ header .logo
   background-repeat: no-repeat;
   background-size: 30px;
   display: flex;
-  
-  
+}
+
+.shopping1 {
+  position: absolute;
+  top: 2;
+  right: 900px;
+  align-items: center;
+  width: 200px;
+  height: 130px;
+  background: url(t.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  display: flex;
 }
 
 .toggle
