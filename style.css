@@ -230,7 +230,7 @@ header .logo
   color: var(--overlay-color); 
 } 
 
-@media (max-width: 698px)
+@media (max-width: 998px)
 {
   .showcase,
   .showcase header
