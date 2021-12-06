@@ -210,6 +210,13 @@ header .logo
 {
   transform: scale(0.5) translateY(-15px);
 }
+.footage {
+  position: absolute;
+  right: 100px;
+  bottom: 45px;
+  align-items: center;
+  font-size: 0.7em;
+}
 .menu
 {
   position: absolute;
