@@ -30,31 +30,22 @@ header .logo
   cursor: pointer;
 }
 
-.shopping {
+.shopping
+{
   position: absolute;
-  top: 2;
-  right: 1100px;
-  align-items: center;
+  top: 20px;
+  left: 300px;
   width: 200px;
-  height: 130px;
-  background: url(s.png);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  display: flex;
 }
 
-.shopping1 {
+.shopping1
+{
   position: absolute;
-  top: 2;
-  right: 800px;
-  align-items: center;
+  top: 20px;
+  right: 750px;
   width: 200px;
-  height: 130px;
-  background: url(t.png);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  display: flex;
 }
+
 
 .toggle
 {
@@ -109,6 +100,9 @@ header .logo
 .logo {
   text-decoration: uppercase;
   cursor: pointer;
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
 } 
 
 .showcase.active
@@ -143,17 +137,17 @@ header .logo
   z-index: 10;
 }
 
-.text h2
+.text h4
 {
-  font-size: 5em;
+  font-size: 4em;
   font-weight: 800;
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
 }
-.text h3
+.text h6
 {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 700;
   color: #fff;
   line-height: 1em;
@@ -185,6 +179,13 @@ header .logo
 {
   letter-spacing: 6px;
 }
+
+.pr 
+{
+  position: absolute;
+  left: 100px;
+  top: 650px;
+}
 .social
 {
   position: absolute;
@@ -210,12 +211,13 @@ header .logo
 {
   transform: scale(0.5) translateY(-15px);
 }
+
 .footage {
   position: absolute;
   right: 100px;
   bottom: 45px;
   align-items: center;
-  font-size: 0.7em;
+  font-size: 11px;
 }
 .menu
 {
@@ -248,19 +250,114 @@ header .logo
   color: var(--overlay-color); 
 } 
 
-@media (max-width: 998px)
+
+@media (max-width: 800px)
 {
   .showcase,
   .showcase header
   {
-    padding: 40px;
+    padding: 80px;
   }
-  .text h2
+  .text h4
   {
-    font-size: 3em;
+    font-size: 1em;
   }
-  .text h3
+  .text h6
   {
-    font-size: 2em;
+    font-size: 1em;
+  }
+  .text p
+  {
+    font-size: 0.8em;
+  }
+  .social p 
+  {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 800px) {
+  .f
+  {
+    position: absolute;
+    bottom: 100px;
+    left: 40px;
+    /* padding-left: 10px; */
+  }
+  .ig 
+  {
+    position: absolute;
+    bottom: 100px;
+    left: 80px;
+  }
+  .em 
+  {
+    position: absolute;
+    bottom: 80px;
+    left: 120px;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .shopping
+  {
+    position: absolute;
+    left: 130px;
+    top: 100px;
+    bottom: 10px;
+    width: 150px;
+    height: 80px;
+  }
+
+  .shopping1
+  {
+    position: absolute;
+    left: 130px;
+    top: 430px;
+    bottom: 10px;
+    width: 150px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo 
+  {
+    position: absolute;
+    top: 0px;
+    padding-top: 8px;
+  }
+  .toggle 
+  {
+    position: absolute;
+    top: 0px;
+    right: 80px;
+    padding-top: 2px;
+  }
+}
+
+@media (max-width: 800px) {
+  .text 
+  {
+    position: absolute;
+    top: 220px;
+    right: 80px;
+  }
+}
+
+@media (max-width: 800px) {
+  .pr 
+  {
+    position: absolute;
+    top: 550px;
+  }
+}
+
+@media (max-width: 800px) {
+  .footage 
+  {
+    position: absolute;
+    bottom: 10px;
   }
 }
