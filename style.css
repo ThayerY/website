@@ -280,20 +280,20 @@ header .logo
   .f
   {
     position: absolute;
-    bottom: 100px;
+    bottom: 80px;
     left: 40px;
     /* padding-left: 10px; */
   }
   .ig 
   {
     position: absolute;
-    bottom: 100px;
+    bottom: 80px;
     left: 80px;
   }
   .em 
   {
     position: absolute;
-    bottom: 80px;
+    bottom: 60px;
     left: 120px;
   }
 
