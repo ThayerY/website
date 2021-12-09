@@ -315,7 +315,7 @@ header .logo
   {
     position: absolute;
     left: 130px;
-    top: 430px;
+    top: 400px;
     bottom: 10px;
     width: 150px;
     height: 80px;
@@ -350,8 +350,12 @@ header .logo
 @media (max-width: 800px) {
   .pr 
   {
-    position: absolute;
-    top: 550px;
+    top: 525px;
+    text-align: center;
+    padding-right: 30x;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
   }
 }
 
