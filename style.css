@@ -4,15 +4,14 @@
   --overlay-color: #03a9f4
 }
 
-*
-{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-header
-{
+
+header {
   position: absolute;
   top: 0;
   left: 0;
@@ -23,23 +22,63 @@ header
   justify-content: space-between;
   align-items: center;
 }
-header .logo
-{
+
+header .logo {
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
 }
 
-.shopping
-{
+header .pro {
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 60px;
+  top: 25px;
+  right: 200px;
+  width: 250px;
+}
+
+header .sub1 {
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 30px;
+  top: 120px;
+  right: 200px;
+  width: 200px;
+}
+
+header .sub {
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 30px;
+  top: 160px;
+  right: 200px;
+  width: 210px;
+}
+
+.shopping {
   position: absolute;
   top: 20px;
   left: 300px;
   width: 200px;
 }
 
-.shopping1
-{
+.shopping1 {
   position: absolute;
   top: 20px;
   right: 750px;
@@ -47,8 +86,7 @@ header .logo
 }
 
 
-.toggle
-{
+.toggle {
   position: relative;
   width: 60px;
   height: 60px;
@@ -58,16 +96,16 @@ header .logo
   background-position: center;
   cursor: pointer;
 }
-.toggle.active
-{
+
+.toggle.active {
   background: url(close.png);
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
   cursor: pointer;
 }
-.showcase
-{
+
+.showcase {
   position: absolute;
   right: 0;
   width: 100%;
@@ -86,6 +124,7 @@ header .logo
 .showcase.active {
   right: 300px;
 }
+
 .showcase header {
   position: absolute;
   top: 0;
@@ -97,21 +136,20 @@ header .logo
   align-items: center;
   justify-content: space-between;
 }
+
 .logo {
   text-decoration: uppercase;
   cursor: pointer;
   text-decoration: none;
   font-size: 24px;
   color: #111;
-} 
+}
 
-.showcase.active
-{
+.showcase.active {
   right: 300px;
-} 
+}
 
- .showcase video
-{
+.showcase video {
   position: absolute;
   top: 0;
   left: 0;
@@ -119,10 +157,9 @@ header .logo
   height: 100%;
   object-fit: cover;
   opacity: 0.8;
-} 
- 
- .overlay
-{
+}
+
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -131,38 +168,37 @@ header .logo
   background: var(--overlay-color);
   mix-blend-mode: overlay;
 }
-.text
-{
+
+.text {
   position: relative;
   z-index: 10;
 }
 
-.text h4
-{
+.text h4 {
   font-size: 4em;
   font-weight: 800;
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
 }
-.text h6
-{
+
+.text h6 {
   font-size: 3em;
   font-weight: 700;
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
 }
-.text p
-{
+
+.text p {
   font-size: 1.1em;
   color: #fff;
   margin: 20px 0;
   font-weight: 400;
   max-width: 700px;
 }
-.text a
-{
+
+.text a {
   display: inline-block;
   font-size: 1em;
   background: #fff;
@@ -175,19 +211,18 @@ header .logo
   letter-spacing: 2px;
   transition: 0.2s;
 }
-.text a:hover
-{
+
+.text a:hover {
   letter-spacing: 6px;
 }
 
-.pr 
-{
+.pr {
   position: absolute;
   left: 100px;
   top: 650px;
 }
-.social
-{
+
+.social {
   position: absolute;
   padding-left: 60px;
   z-index: 10;
@@ -196,20 +231,20 @@ header .logo
   justify-content: center;
   align-items: center;
 }
-.social li
-{
+
+.social li {
   list-style: none;
 }
-.social li a
-{
+
+.social li a {
   display: inline-block;
   margin-right: 20px;
   filter: invert(1);
   transform: scale(0.5);
   transition: 0.5s;
 }
-.social li a:hover
-{
+
+.social li a:hover {
   transform: scale(0.5) translateY(-15px);
 }
 
@@ -224,8 +259,7 @@ header .logo
   padding: 6px 2px;
 }
 
-.menu
-{
+.menu {
   position: absolute;
   top: 0;
   right: 0;
@@ -235,68 +269,66 @@ header .logo
   justify-content: center;
   align-items: center;
 }
-.menu ul
-{
+
+.menu ul {
   position: relative;
 }
-.menu ul li
-{
+
+.menu ul li {
   list-style: none;
 }
-.menu ul li a
-{
+
+.menu ul li a {
   text-decoration: none;
   font-size: 24px;
   color: #111;
 }
-.menu ul li a:hover
-{
+
+.menu ul li a:hover {
   /* color: #03a9f4;  */
-  color: var(--overlay-color); 
-} 
+  color: var(--overlay-color);
+}
 
 
-@media (max-width: 800px)
-{
+@media (max-width: 800px) {
+
   .showcase,
-  .showcase header
-  {
+  .showcase header {
     padding: 80px;
   }
-  .text h4
-  {
+
+  .text h4 {
     font-size: 1em;
   }
-  .text h6
-  {
+
+  .text h6 {
     font-size: 1em;
   }
-  .text p
-  {
+
+  .text p {
     font-size: 0.8em;
   }
-  .social p 
-  {
+
+  .social p {
     font-size: 0.8em;
   }
 }
 
 @media (max-width: 800px) {
-  .face
-  {
+  .face {
     position: absolute;
     bottom: 80px;
     left: 60px;
     /* padding-left: 10px; */
   }
-  .ig 
-  {
+
+  .ig {
     position: absolute;
     bottom: 80px;
     left: 100px;
   }
-  .em 
-  {
+
+  .em {
     position: absolute;
     bottom: 60px;
     left: 140px;
@@ -305,8 +337,7 @@ header .logo
 }
 
 @media (max-width: 800px) {
-  .shopping
-  {
+  .shopping {
     position: absolute;
     left: 130px;
     top: 100px;
@@ -315,8 +346,7 @@ header .logo
     height: 80px;
   }
 
-  .shopping1
-  {
+  .shopping1 {
     position: absolute;
     left: 130px;
     top: 450px;
@@ -327,14 +357,13 @@ header .logo
 }
 
 @media (max-width: 800px) {
-  .logo 
-  {
+  .logo {
     position: absolute;
     top: 0px;
     padding-top: 8px;
   }
-  .toggle 
-  {
+
+  .toggle {
     position: absolute;
     top: 0px;
     right: 80px;
@@ -343,8 +372,7 @@ header .logo
 }
 
 @media (max-width: 800px) {
-  .text 
-  {
+  .text {
     position: absolute;
     top: 220px;
     right: 80px;
@@ -364,8 +392,7 @@ header .logo
 } */
 
 @media (max-width: 800px) {
-  .footage 
-  {
+  .footage {
     position: absolute;
     bottom: 30px;
   }
