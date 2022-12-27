@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 :root {
   --overlay-color: #03a9f4
@@ -285,7 +285,6 @@ header .sub {
 }
 
 .menu ul li a:hover {
-  /* color: #03a9f4;  */
   color: var(--overlay-color);
 }
 
@@ -336,25 +335,6 @@ header .sub {
 
 }
 
-/* @media (max-width: 800px) {
-  .shopping {
-    position: absolute;
-    left: 130px;
-    top: 100px;
-    bottom: 10px;
-    width: 150px;
-    height: 80px;
-  }
-
-  .shopping1 {
-    position: absolute;
-    left: 130px;
-    top: 450px;
-    bottom: 10px;
-    width: 150px;
-    height: 80px;
-  }
-} */
 
 @media (max-width: 800px) {
   header .logo {
@@ -403,21 +383,427 @@ header .sub {
   }
 }
 
-/* @media (max-width: 800px) {
-  .pr 
-  {
-    top: 525px;
-    text-align: center;
-    padding-right: 30x;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-  }
-} */
 
 @media (max-width: 800px) {
   .footage {
     position: absolute;
     bottom: 30px;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+* {
+  width: fit-content;
+  height: fit-content;
+  font-family: 'Poppins', sans-serif;
+  background-color: cadetblue;
+}
+
+.logo {
+  position: relative;
+  /* width: 300px; */
+  font-size: 2.4em;
+  top: 10px;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.5em;
+}
+
+.shopping {
+  position: relative;
+  width: 40%;
+  top: -80px;
+}
+
+.shopping1 {
+  position: relative;
+  top: -5px;
+  right: -35px;
+  width: 300px;
+}
+
+.new {
+  position: relative;
+  /* width: 300px; */
+  font-size: 2.2em;
+  top: -50px;
+  left: 220px;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.5em;
+}
+
+.new1 {
+  position: relative;
+  /* width: 300px; */
+  font-size: 1.2em;
+  top: -25px;
+  left: 220px;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.5em;
+}
+
+.new2 {
+  position: relative;
+  /* width: 300px; */
+  font-size: 1.2em;
+  top: -12px;
+  left: 220px;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.5em;
+}
+
+.pro {
+  position: relative;
+  width: 40%;
+  left: 45px;
+  bottom: -50px;
+}
+
+
+/* .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}  */
+
+
+.text4 {
+  position: relative;
+  width: 125px;
+  top: -60px;
+  font-size: 1em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.5em;
+  /* text-transform: uppercase; */
+}
+
+.p1 {
+  position: relative;
+  top: -55px;
+
+  padding-left: 10px;
+  width: 125px;
+  font-size: 1em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.5em;
+}
+
+.a {
+  position: relative;
+  top: -50px;
+  background: rgb(125, 131, 243);
+  text-decoration: none;
+  font-weight: 500;
+  color: #111;
+  letter-spacing: 1px;
+  transition: 0.2s;
+  width: 125px;
+  font-size: 1em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.5em;
+}
+
+.texta:hover {
+  letter-spacing: 4px;
+}
+
+.pr {
+  position: relative;
+  left: 55px;
+  width: 350px;
+  bottom: -80px;
+}
+
+.media {
+  position: relative;
+  left: 60px;
+  bottom: -200px;
+}
+
+.social {
+  position: absolute;
+  padding-left: 60px;
+  z-index: 10;
+  bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  margin-right: 20px;
+  /* filter: invert(1); */
+  transform: scale(0.5);
+  /* transition: 0.5s; */
+}
+
+.social li a:hover {
+  transform: scale(0.5) translateY(-15px);
+}
+
+.footage {
+  position: absolute;
+  bottom: -100px;
+  left: 70px;
+  font-size: 15px;
+}
+
+
+@media (min-width: 768px) {
+
+  .text4 {
+    position: relative;
+    top: -100px;
+    width: 200px;
+    padding-left: 15px;
+    font-size: 1.4em;
+
+  }
+
+  .p1 {
+    position: relative;
+    top: -75px;
+    padding-left: 10px;
+    width: 250px;
+    font-size: 1.3em;
+    font-weight: 800;
+  }
+
+  .a {
+    position: relative;
+    font-weight: 500;
+    width: 200px;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 1.3em;
+    font-weight: 800;
+  }
+
+  .logo {
+    position: relative;
+    padding-top: 19px;
+    padding-left: 15px;
+    top: -0.4px;
+    font-size: 3rem;
+  }
+
+  .shopping {
+    position: relative;
+    width: 30%;
+    top: -130px;
+  }
+
+  .shopping1 {
+    position: relative;
+    top: -5px;
+    right: -170px;
+    width: 350px;
+  }
+
+  .new {
+    position: relative;
+    color: #111;
+    top: -50px;
+    left: 490px;
+    font-size: 2.8rem
+  }
+
+  .new1 {
+    position: relative;
+    color: #111;
+    top: -25px;
+    left: 470px;
+    font-size: 2rem
+  }
+
+  .new2 {
+    position: relative;
+    color: #111;
+    top: -12px;
+    left: 470px;
+    font-size: 2rem
+  }
+
+  .pro {
+    position: relative;
+    width: 35%;
+    left: 290px;
+    bottom: -60px;
+  }
+
+  .pr {
+    position: relative;
+    width: 400px;
+    bottom: -10px;
+    left: 140px;
+    font-size: 1.3rem;
+  }
+
+  .media {
+    position: relative;
+    width: 10%;
+    bottom: -130px;
+    left: 200px;
+  }
+
+  .footage {
+    position: relative;
+    bottom: -90px;
+    left: 160px;
+    font-size: 1.2rem;
+
+  }
+}
+
+@media (min-width: 1024px) {
+
+
+
+  * {
+    width: 65%;
+    height: auto;
+  }
+
+  .text4 {
+    position: relative;
+    background: transparent;
+    top: -450px;
+    width: 470px;
+    padding-left: 15px;
+    font-size: 2em;
+
+  }
+
+  .p1 {
+    position: relative;
+    background: transparent;
+    top: -400px;
+    padding-left: 10px;
+    width: 250px;
+    font-size: 1.3em;
+    font-weight: 800;
+  }
+
+  .a {
+    position: relative;
+    top: -350px;
+    font-weight: 500;
+    width: 200px;
+    padding-left: 15px;
+    font-size: 1.3em;
+  }
+
+  .logo {
+    position: relative;
+    padding-top: 19px;
+    padding-left: 15px;
+    top: -0.4px;
+    font-size: 4rem;
+  }
+
+  .shopping {
+    position: relative;
+    width: 60%;
+    top: -325px;
+    left: 450px;
+  }
+
+  .shopping1 {
+    position: relative;
+    background: transparent;
+    top: -450px;
+    left: 450px;
+    width: 500px;
+  }
+
+  .new {
+    position: relative;
+    color: #111;
+    top: -90px;
+    left: 1080px;
+    font-size: 5rem
+  }
+
+  .new1 {
+    position: relative;
+    color: #111;
+    top: -25px;
+    left: 1080px;
+    font-size: 3rem
+  }
+
+  .new2 {
+    position: relative;
+    color: #111;
+    top: -12px;
+    left: 1080px;
+    font-size: 3rem
+  }
+
+  .pro {
+    position: relative;
+    background: transparent;
+    width: 50%;
+    left: 1080px;
+    top: -90px;
+  }
+
+  .pr {
+    position: relative;
+    background: transparent;
+    width: 400px;
+    top: -350px;
+    left: 450px;
+    font-size: 1.3rem;
+  }
+
+  .media {
+    position: relative;
+    background: transparent;
+    width: 300px;
+    top: -200px;
+    left: 500px;
+  }
+
+  .em {
+    width: 300px;
+  }
+
+
+  .footage {
+    position: relative;
+    background: transparent;
+    width: 600px;
+    top: -190px;
+    left: 470px;
+    font-size: 1.2rem;
   }
 }
