@@ -407,7 +407,8 @@ header .sub {
 
 * {
   width: fit-content;
-  height: fit-content;
+  block-size: fit-content;
+
   font-family: 'Poppins', sans-serif;
   background-color: cadetblue;
 }
@@ -570,9 +571,9 @@ header .sub {
 }
 
 .footage {
-  position: absolute;
-  bottom: -100px;
-  left: 70px;
+  position: relative;
+  bottom: -140px;
+  left: 50px;
   font-size: 15px;
 }
 
