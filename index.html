@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.png" />
   <link rel="stylesheet" href="style.css">
+  <!-- Add the Mapbox Geocoding and Dark Sky Weather APIs as external scripts -->
+  <script src="https://api.mapbox.com/geocoding/v5/mapbox.places.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"></script>
+
   <title>Shoping</title>
 </head>
 
@@ -43,48 +47,7 @@
   </script>
 
 
-  <!-- Video Source -->
-  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
-  <!-- <section class="showcase">
-    <header>
-      <h2 class="logo">تسوق</h2>
-      <img class="shopping" src="s.png" />
-      <img class="shopping1" src="t.png" />
-      <div class="toggle"></div>
-      <h1 class="pro"> حلول برمجيه</h1>
-      <h3 class="sub">أنشاء مواقع ألكترونيه</h3>
-      <h3 class="sub1">تطبيقات حسب ألطلب</h3>
-    </header>
 
-    <video src="explore.mp4" muted loop autoplay></video>
-    <div class="overlay"></div>
-    <div class="text">
-      <h4>تسوق وأنت جالس في بيتك</h4>
-      <h6>من أي متجر تشاء</h6>
-      <p>تسوق اون لاين من اي متجر عالمي ترغب الشراء منه.</p>
-      <a href="https://www.amazon.com/" target="_blank">اكتشفت عالم تسوق جديد</a>
-    </div>
-    <div class="pr">
-      <p>للتواصل عبر مواقع التواصل الاجتماعي أو من خلال الهاتف</p>
-    </div>
-    <ul class="social">
-      <li class="face"><a href="#"><img src="facebook.png"></a></li>
-      <li class="ig"><a href="#"><img src="instagram.png"></a></li>
-      <li class="em"><a href="#"><img src="email.png"></a></li>
-    </ul>
-
-    <footer class="footage">
-      <p>Copyright &copy; Thaer Younus. 2017-ثائر2023</p>
-    </footer>
-
-  </section>
-  <div class="menu">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </div>
-  <script src="main.js"></script> -->
 
 
   <div class="logo">تسوق</div>
@@ -96,7 +59,16 @@
   <!-- <img class="shopping1" src="t.png" /> -->
   <img class="pro" src="pro.png" />
 
+  <!-- The HTML code below creates a form with a search input and a submit button. -->
 
+
+  <form id="weather-form">
+    <input type="text" id="city" placeholder="Enter a city">
+    <button type="submit">Get Weather</button>
+  </form>
+
+  <!-- The div below will be used to display the weather data. -->
+  <div id="weather-data"></div>
 
 
   <div class="text4">تسوق وأنت جالس في بيتك من أي متجر تشاء</div>

@@ -413,6 +413,38 @@ header .sub {
   background-color: cadetblue;
 }
 
+/* weather bar search */
+/* The CSS code below styles the form and the weather data display. */
+#weather-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#weather-form input {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#weather-form button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #00bfff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#weather-data {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
 .logo {
   position: relative;
   /* width: 300px; */
