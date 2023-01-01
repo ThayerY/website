@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const city = document.getElementById('city').value;
 
     // Use Mapbox API to get the latitude and longitude for the given city
-    const geocodeUrl = `https://api.mapbox.com/geocoding/v5/mapbox.places/${city}.json?access_token=pk.eyJ1IjoidHQwMSIsImEiOiJjbGNhbWhpNGcxdjdxM3Vyazd5eXNxcmY1In0.m14SyAfqMDK4MQhLeKBsJw`;
+    const geocodeUrl = `https://api.mapbox.com/geocoding/v5/mapbox.places/${city}.json?access_token=My_API`;
     axios.get(geocodeUrl)
       .then((response) => {
         // Get the latitude and longitude from the response
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const longitude = response.data.features[0].center[0];
 
         // Use Dark Sky API to get the weather data for the given latitude and longitude
-        const weatherUrl = `https://api.darksky.net/forecast/69c057a17f6f6526a0dc1601c08d02d1/${latitude},${longitude}`;
+        const weatherUrl = `https://api.darksky.net/forecast/MY_API/${latitude},${longitude}`;
         axios.get(weatherUrl)
           .then((response) => {
             // Get the weather data from the response
